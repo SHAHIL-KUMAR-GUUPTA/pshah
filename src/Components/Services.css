@@ -1,0 +1,38 @@
+#services h5 {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  #services ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  #services ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #555;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect for list items */
+  #services ul li:hover {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .service-col {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Card hover effect */
+  .service-col:hover {
+    transform: scale(1.05);
+  }
+  

@@ -1,0 +1,66 @@
+/* About Section Styling */
+#about {
+    background-color: #f4f4f4; /* Light gray background */
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  .section-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .section-description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  
+  .blockquote {
+    font-style: italic;
+    color: #007bff;
+    border-left: 4px solid #007bff;
+    padding-left: 20px;
+    margin: 20px 0;
+    font-size: 1.2em;
+  }
+  
+  /* Profile image styles */
+  .profile-img {
+    width: 250px; /* Adjust size of the profile image */
+    height: 250px;
+    object-fit: cover;
+    border: 5px solid #007bff; /* Blue border around image */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for image */
+  .profile-img:hover {
+    transform: scale(1.1); /* Zoom in effect */
+    box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.3); /* Subtle shadow */
+  }
+  
+  /* Second image styling */
+  img {
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .profile-img {
+      width: 200px;
+      height: 200px;
+    }
+    .section-title {
+      font-size: 2em;
+    }
+    .section-description {
+      font-size: 1em;
+    }
+  }
+  
