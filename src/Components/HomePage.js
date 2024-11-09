@@ -12,67 +12,90 @@ import './skills.css'; // Custom CSS for styling
 function App() {
   return (
     <div>
-      {/* Navigation Bar */}
-      <Navbar bg="dark" variant="dark" expand="lg" fixed='top'>
-        <Container>
-          <Navbar.Brand href="#home">My Portfolio</Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbar-nav" />
-          <Navbar.Collapse id="navbar-nav">
-            <Nav className="ms-auto">
-              <Nav.Link href="#about">About</Nav.Link>
-              <Nav.Link href="#projects">Project</Nav.Link>
-              <Nav.Link href="#skills">Skills</Nav.Link>
-              <Nav.Link href="#contact">Contact</Nav.Link>
-              <Nav.Link href="#services">Services</Nav.Link>
-              <Nav.Link href="#services-and-team">Team Members</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+     {/* Navigation Bar */}
+<Navbar bg="light" variant="light" expand="lg" fixed="top" style={{ backgroundColor: "#FFB6C1" }}>
+  <Container>
+    <Navbar.Brand href="#home" style={{ color: "red" }}>My Portfolio</Navbar.Brand>
+    <Navbar.Toggle aria-controls="navbar-nav" />
+    <Navbar.Collapse id="navbar-nav">
+      <Nav className="ms-auto">
+        <Nav.Link href="#about" style={{ color: "black"  }} className='nav-link-custom'>About</Nav.Link>
+        <Nav.Link href="#projects" style={{ color: "black" }}className='nav-link-custom' >Projects</Nav.Link>
+        <Nav.Link href="#skills" style={{ color: "black" }}className='nav-link-custom'>Skills</Nav.Link>
+        <Nav.Link href="#contact" style={{ color: "black" }}className='nav-link-custom'>Contact</Nav.Link>
+        <Nav.Link href="#services" style={{ color: "black" }}className='nav-link-custom'>Services</Nav.Link>
+        <Nav.Link href="#services-and-team" style={{ color: "black" }}className='nav-link-custom'>Team Members</Nav.Link>
+      </Nav>
+    </Navbar.Collapse>
+  </Container>
+</Navbar>
 
-      {/* Hero Section */}
-      <div className="hero-section" style={{ background: '#343a40', color: 'white', padding: '100px 0' }}>
-        <Container className="text-center">
-          <Row>
-            <Col>
-           {  /* <h1 className="display-4">Hello, I'm [Shahil Kumar Gupta]</h1>*/}
-           <h1> 
-           <TypingEffect
-               text={[
-                "Welcome to my portfolio!",
-                "Hello, I'm Shahil Kumar Gupta"]}
-               speed={100}
-               eraseSpeed={50} 
-             eraseDelay={2000}
-           />
-           </h1>
-              <p className="lead">A Computer Science Engineering Student</p>
-              <p>
-                <Button variant="primary" href="#services">Our Services</Button>
-              </p>
+{/* CSS in a <style> block or a CSS file */}
+<style jsx>{`
+  .nav-link-custom {
+    text-color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+  }
 
-              <h2 className="typing-text" style={{color:'yellowgreen'}}>
-      <TypingEffect
-        text={[
-          "Services for college students and personal projects!",
-          "Graphic Design for personal branding",
-          "Web Projects for college assignments",
-          "Java Projects for academic and personal growth",
-          "Python Projects for data analysis and AI",
-          "Notes for easy learning",
-          "Guidance for college students",
-          "Portfolio development assistance"
-        ]}
-        speed={100}
-        eraseSpeed={50}
-        eraseDelay={200}
-      />
-    </h2>
-            </Col>
-          </Row>
-        </Container>
-      </div>
-       {/* About Section */}
+  .nav-link-custom:hover {
+    color: #900C3F; /* Text color on hover */
+    background-color: #f0f8ff; /* Light background on hover */
+    text-decoration: underline; /* Underline on hover */
+  }
+`}</style>
+{/* Hero Section */}
+<div
+  className="hero-section"
+  style={{
+    background: "linear-gradient(to right, #FFB6C1, #87CEFA)", // soft pink to sky blue gradient
+    color: "#333333",
+    padding: "100px 0"
+  }}
+>
+  <Container className="text-center">
+    <Row>
+      <Col>
+        <h1>
+          <TypingEffect
+            text={[
+              "Welcome to my portfolio!",
+              "Hello, I'm Shahil Kumar Gupta"
+            ]}
+            speed={100}
+            eraseSpeed={50}
+            eraseDelay={2000}
+          />
+        </h1>
+        <p className="lead" style={{ color: "#333333" }}>A Computer Science Engineering Student</p>
+        <p>
+          <Button variant="outline-primary" href="#services" style={{ borderColor: "#FF7F50", color: "#FF7F50" }}>
+            Our Services
+          </Button>
+        </p>
+        <h2 className="typing-text" style={{ color: "blue" }}>
+          <TypingEffect
+            text={[
+              "Services for college students and personal projects!",
+              "Graphic Design for personal branding",
+              "Web Projects for college assignments",
+              "Java Projects for academic and personal growth",
+              "Python Projects for data analysis and AI",
+              "Notes for easy learning",
+              "Guidance for college students",
+              "Portfolio development assistance"
+            ]}
+            speed={100}
+            eraseSpeed={50}
+            eraseDelay={200}
+          />
+        </h2>
+      </Col>
+    </Row>
+  </Container>
+</div>
+  {/* About Section */}
        <section id="about" className="py-5 bg-light">
       <Container>
         <Row className="align-items-center">
