@@ -1,13 +1,14 @@
-import React from 'react';
+import React from 'react'; 
 import { Navbar, Nav, Container, Row, Col, Button } from 'react-bootstrap';
 import { Card } from 'react-bootstrap';
-import { FaEnvelope, FaGithub,FaLinkedin,FaTwitter, FaWhatsapp } from 'react-icons/fa'; // Optional icons for social links
+import { FaEnvelope, FaGithub,FaLinkedin,FaTwitter, FaWhatsapp,FaComments } from 'react-icons/fa'; // Optional icons for social links
 import TypingEffect from 'react-typing-effect';
 import { FaCode, FaPaintBrush,FaMapSigns } from 'react-icons/fa';
 import './Services.css'; // Custom CSS for additional styling
 import './About.css'; // Custom CSS for styling
 import './skills.css'; // Custom CSS for styling
-
+import './FloatingButton.css';
+import { Link } from 'react-router-dom';
 
 function HomePage() {
   return (
@@ -461,6 +462,15 @@ function HomePage() {
       <footer className="bg-dark text-white text-center py-3">
         <p>&copy; 2024 shahil kumar Gupta. All Rights Reserved.</p>
       </footer>
+
+      <Link 
+      to='/Chatbot' 
+      className="floating-button" 
+      style={{ backgroundColor: '#007bff', color: '#fff', padding: '10px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+    >
+      <FaComments style={{ marginRight: '8px' }} /> {/* Add icon before text */}
+      ChatBot
+    </Link>
     </div>
   );
 }

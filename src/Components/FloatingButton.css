@@ -1,0 +1,18 @@
+.floating-button {
+    position: fixed;
+    bottom: 20px; /* distance from the bottom */
+    right: 20px; /* distance from the right */
+    z-index: 1000; /* keep it above other elements */
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+  }
+  
+  .floating-button:hover {
+    transform: scale(1.1);
+    background-color: #0056b3; /* Slight color change on hover */
+  }
+  
