@@ -9,7 +9,7 @@ import './About.css'; // Custom CSS for styling
 import './skills.css'; // Custom CSS for styling
 
 
-function App() {
+function HomePage() {
   return (
     <div>
      {/* Navigation Bar */}
@@ -19,12 +19,12 @@ function App() {
     <Navbar.Toggle aria-controls="navbar-nav" />
     <Navbar.Collapse id="navbar-nav">
       <Nav className="ms-auto">
-        <Nav.Link href="#about" style={{ color: "black"  }} className='nav-link-custom'>About</Nav.Link>
-        <Nav.Link href="#projects" style={{ color: "black" }}className='nav-link-custom' >Projects</Nav.Link>
-        <Nav.Link href="#skills" style={{ color: "black" }}className='nav-link-custom'>Skills</Nav.Link>
-        <Nav.Link href="#contact" style={{ color: "black" }}className='nav-link-custom'>Contact</Nav.Link>
-        <Nav.Link href="#services" style={{ color: "black" }}className='nav-link-custom'>Services</Nav.Link>
-        <Nav.Link href="#services-and-team" style={{ color: "black" }}className='nav-link-custom'>Team Members</Nav.Link>
+        <Nav.Link href="#about" style={{ color: "blue"}} className='nav-link-custom'>About</Nav.Link>
+        <Nav.Link href="#projects" style={{ color: "blue" }}className='nav-link-custom' >Projects</Nav.Link>
+        <Nav.Link href="#skills" style={{ color: "blue" }}className='nav-link-custom'>Skills</Nav.Link>
+        <Nav.Link href="#contact" style={{ color: "blue" }}className='nav-link-custom'>Contact</Nav.Link>
+        <Nav.Link href="#services" style={{ color: "blue" }}className='nav-link-custom'>Services</Nav.Link>
+        <Nav.Link href="#services-and-team" style={{ color: "blue" }}className='nav-link-custom'>Team Members</Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Container>
@@ -465,4 +465,4 @@ function App() {
   );
 }
  
-export default App;
+export default HomePage;
