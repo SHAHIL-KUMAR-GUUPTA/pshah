@@ -348,7 +348,7 @@ function HomePage() {
             <Card className="team-card">
               <Card.Img variant="top" src="Graphic.jpg" alt="Team Member 2" />
               <Card.Body>
-                <Card.Title>Ritesh Kumar</Card.Title>
+                <Card.Title>Smith Agrwall</Card.Title>
                 <Card.Text>
                   Graphic Designer<br />
                   Passionate about creating stunning visual designs for brands, advertisements, and print media.
@@ -361,7 +361,7 @@ function HomePage() {
             <Card className="team-card">
               <Card.Img variant="top" src="Projectc.jpg" alt="Team Member 3" />
               <Card.Body>
-                <Card.Title>Rajat Jaiswal</Card.Title>
+                <Card.Title>Navid</Card.Title>
                 <Card.Text>
                   Project Consultant<br />
                   Providing guidance for college projects, research, and practical implementations.
